@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "peak-detection-pyenv"
+version = "0.1.0"
+description = "Peak Detection ML environment"
+authors = [
+{ name = "Daniel Magdalinski", email = "danielmagdalinski@hotmail.se" },]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "1.26.4"
+matplotlib = "^3.10.0"
+torch = "^2.5.1"
+scikit-learn = "^1.6.0"
+segmentation-models-pytorch = "^0.3.4"
+ray = {extras = ["tune"], version = "^2.40.0"}
+torchsummary = "^1.5.1"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+optuna = "^4.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
